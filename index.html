@@ -1,39 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" >
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Valentines Day Card</title>
-  <link rel="stylesheet" href="./style.css">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instagram Login</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
- 
-  <div id="card">
-    <center><h1>Valentines Day Card </h1></center>
-    <div class="heart" id="heart1">
-      <div id="half1">
-        <div id="circle"></div>
-        <div id="rec"></div>
-      </div>
-      <div id="half2">
-        <div id="circle"></div>
-        <div id="rec"></div>
-      </div>
+  <div class="container">
+    <div class="login-box">
+      <h1 class="logo">Instagram</h1>
+
+      <form>
+        <input type="text" placeholder="Phone number, username, or email" required>
+        <input type="password" placeholder="Password" required>
+        <button type="submit">Log In</button>
+
+        <div class="divider">
+          <div class="line"></div>
+          <p>OR</p>
+          <div class="line"></div>
+        </div>
+
+        <a href="#" class="fb-login">Log in with Facebook</a>
+        <a href="#" class="forgot">Forgot password?</a>
+      </form>
     </div>
-    <div id="message">
-      <h2>Happy Valentines Day</h2>
-    </div>
-    <div class="heart" id="heart2">
-      <div id="half1">
-        <div id="circle"></div>
-        <div id="rec"></div>
-      </div>
-      <div id="half2">
-        <div id="circle"></div>
-        <div id="rec"></div>
-      </div>
+
+    <div class="signup-box">
+      <p>Don't have an account? <a href="#">Sign up</a></p>
     </div>
   </div>
-  
+
+  <footer>
+    <p>© 2025 Instagram from Meta</p>
+  </footer>
 </body>
 </html>
