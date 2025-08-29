@@ -3,48 +3,148 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Google</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Instagram Login</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: #fafafa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    .login-box {
+      background: #fff;
+      border: 1px solid #dbdbdb;
+      padding: 40px;
+      width: 350px;
+      margin: 0 auto;
+    }
+
+    .login-box h1 {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+
+    .input-box {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    .input-box input {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #dbdbdb;
+      border-radius: 3px;
+      background: #fafafa;
+      font-size: 14px;
+    }
+
+    .login-btn {
+      width: 100%;
+      padding: 10px;
+      background: #0095f6;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .divider {
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #8e8e8e;
+      margin: 20px 0;
+    }
+
+    .divider::before,
+    .divider::after {
+      content: '';
+      flex: 1;
+      border-bottom: 1px solid #dbdbdb;
+    }
+
+    .divider:not(:empty)::before {
+      margin-right: .75em;
+    }
+
+    .divider:not(:empty)::after {
+      margin-left: .75em;
+    }
+
+    .fb-login {
+      color: #385185;
+      font-weight: bold;
+      text-decoration: none;
+      display: block;
+      margin: 15px 0;
+    }
+
+    .forgot {
+      color: #00376b;
+      font-size: 12px;
+      text-decoration: none;
+    }
+
+    .signup-box {
+      background: #fff;
+      border: 1px solid #dbdbdb;
+      padding: 20px;
+      width: 350px;
+      margin: 15px auto;
+      text-align: center;
+    }
+
+    .signup-box a {
+      color: #0095f6;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 12px;
+      color: #8e8e8e;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
-  <!-- Top Navigation -->
-  <nav class="top-nav">
-    <a href="#">Gmail</a>
-    <a href="#">Images</a>
-    <span class="apps">🔲</span>
-    <span class="profile">m</span>
-  </nav>
-
-  <!-- Google Logo -->
-  <div class="logo">Google</div>
-
-  <!-- Search Box -->
-  <div class="search-box">
-    <span class="search-icon">🔍</span>
-    <input type="text" placeholder="">
-    <span class="mic-icon">🎤</span>
-  </div>
-
-  <!-- Buttons -->
-  <div class="buttons">
-    <button>Google Search</button>
-    <button>I’m Feeling Lucky</button>
-  </div>
-
-  <!-- Footer -->
-  <footer>
-    <div class="left">Pakistan</div>
-    <div class="center">
-      <a href="#">About</a>
-      <a href="#">Advertising</a>
-      <a href="#">Business</a>
-      <a href="#">How Search works</a>
+  <div class="container">
+    <div class="login-box">
+      <h1>Instagram</h1>
+      <div class="input-box">
+        <input type="text" placeholder="Phone number, username, or email">
+      </div>
+      <div class="input-box">
+        <input type="password" placeholder="Password">
+      </div>
+      <button class="login-btn">Log In</button>
+      
+      <div class="divider">OR</div>
+      
+      <a href="#" class="fb-login">Log in with Facebook</a>
+      <a href="#" class="forgot">Forgot password?</a>
     </div>
-    <div class="right">
-      <a href="#">Privacy</a>
-      <a href="#">Terms</a>
-      <a href="#">Settings</a>
+    
+    <div class="signup-box">
+      Don’t have an account? <a href="#">Sign up</a>
     </div>
-  </footer>
+
+    <div class="footer">
+      © 2025 Instagram from Meta
+    </div>
+  </div>
 </body>
 </html>
